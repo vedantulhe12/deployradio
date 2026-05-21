@@ -17,9 +17,23 @@ app.post("/github-webhook", (req, res) => {
     console.log("Repo:", repo);
     console.log("Branch:", branch);
 
-    // DEV SPECIFIC
+    // VEDANT
     if (developer === "vedantulhe12") {
         player.play("./sounds/vedant.mp3", (err) => {
+            if (err) console.log(err);
+        });
+    }
+
+    // JANMEJAY
+    if (developer === "Janmejay-Pandya") {
+        player.play("./sounds/janmejay.mp3", (err) => {
+            if (err) console.log(err);
+        });
+    }
+
+    // DAKSH
+    if (developer === "dakshsahu1803") {
+        player.play("./sounds/daksh.mp3", (err) => {
             if (err) console.log(err);
         });
     }
